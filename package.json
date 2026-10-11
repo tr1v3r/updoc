@@ -17,7 +17,7 @@
   "author": "tr1v3r <tr1v3r@outlook.com>",
   "license": "MIT",
   "bin": {
-    "updoc": "./bin.mjs"
+    "updoc": "bin.mjs"
   },
   "files": [
     "bin.mjs",
