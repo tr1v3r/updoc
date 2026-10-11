@@ -1,4 +1,6 @@
-# component-kb
+# updoc
+
+**updoc** = up-to-date docs —— 随代码保持最新的组件知识库。
 
 Agent Skill：为代码组件建立和维护「知识库五件套」，把每次 AI 对话都要重做的代码交接，沉淀为持久的局部材料。
 
@@ -27,7 +29,7 @@ Agent Skill：为代码组件建立和维护「知识库五件套」，把每次
 ## 安装
 
 ```bash
-git clone https://github.com/tr1v3r/component-kb ~/.config/dsh/skills/component-kb
+git clone https://github.com/tr1v3r/updoc ~/.config/dsh/skills/updoc
 # 或任意你的 skills 目录，如 ~/.agents/skills/
 ```
 
@@ -49,7 +51,7 @@ Skill 覆盖全生命周期：
 ## 结构
 
 ```
-component-kb/
+updoc/
 ├── SKILL.md                  # 主流程（先读这个）
 └── references/
     ├── templates.md          # 五件套模板 + 好坏对比示例
