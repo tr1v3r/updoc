@@ -12,9 +12,9 @@ git log --follow --oneline -- internal/runner/
 git log -S 'RabbitMQ' --oneline -- internal/transport/
 git log -G 'sync\.Send' --oneline -- internal/cache/
 
-# 按主题搜提交信息
-git log --grep='revert\|rollback\|回退' -i --oneline
-git log --grep='fix\|incident\|故障' -i --oneline -- internal/runner/
+# 按主题搜提交信息（多个 --grep 是 OR 关系，可移植性优于正则 alternation）
+git log --grep='revert' --grep='rollback' --grep='回退' -i --oneline
+git log --grep='fix' --grep='incident' --grep='故障' -i --oneline -- internal/runner/
 
 # 某段代码最后由谁在哪个提交改的
 git blame -L 120,145 internal/runner/task.go
