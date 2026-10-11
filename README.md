@@ -29,6 +29,13 @@ Agent Skill：为代码组件建立和维护「知识库五件套」，把每次
 ## 安装
 
 ```bash
+npx @tr1v3r/updoc              # 装到 ~/.agents/skills/updoc
+npx @tr1v3r/updoc --dsh        # 装到 ~/.config/dsh/skills/updoc（DeepSeek Harness）
+npx @tr1v3r/updoc --claude     # 装到 ~/.claude/skills/updoc
+npx @tr1v3r/updoc --dir <path> # 自定义目录
+npx @tr1v3r/updoc --remove     # 卸载
+
+# 或直接 git clone（不走 npm）
 git clone https://github.com/tr1v3r/updoc ~/.config/dsh/skills/updoc
 # 或任意你的 skills 目录，如 ~/.agents/skills/
 ```
@@ -53,6 +60,8 @@ Skill 覆盖全生命周期：
 ```
 updoc/
 ├── SKILL.md                  # 主流程（先读这个）
+├── bin.mjs                   # npx 安装器（复制 skill 文件到 skills 目录）
+├── package.json
 └── references/
     ├── templates.md          # 五件套模板 + 好坏对比示例
     └── git-history.md        # git 挖掘命令 + 证据分级（A/B/C）

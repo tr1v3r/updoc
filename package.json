@@ -1,0 +1,35 @@
+{
+  "name": "@tr1v3r/updoc",
+  "version": "0.1.0",
+  "description": "Component knowledge-base skill for AI code handoff — keep the five-piece kit next to your code",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tr1v3r/updoc.git"
+  },
+  "keywords": [
+    "agent",
+    "skill",
+    "claude",
+    "documentation",
+    "knowledge-base",
+    "code-handoff"
+  ],
+  "author": "tr1v3r <tr1v3r@outlook.com>",
+  "license": "MIT",
+  "bin": {
+    "updoc": "./bin.mjs"
+  },
+  "files": [
+    "bin.mjs",
+    "SKILL.md",
+    "references/",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
